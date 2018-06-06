@@ -1,0 +1,12 @@
+{
+  "name": "sucre-salud",
+  "version": "1.0.0",
+  "description": "web to sucre salud",
+  "main": "gulp.js",
+  "repository": "https://github.com/orlmonteverde/sucre-salud.git",
+  "author": "Orlando Monteverde",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
