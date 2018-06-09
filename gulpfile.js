@@ -13,10 +13,17 @@ const gulp = require('gulp'),
 
 
 // Configuration
-const sassOptions = {outputStyle: 'expanded'}
+const sassOptions = {
+  outputStyle: 'expanded',
+  includePaths: [
+    './src/scss/',
+    './node_modules/ed-grid/',
+    './node_modules/font-awesome/scss/',
+  ],
+}
 
 const prefixerOptions = {
-  browsers: ['last 3 versions'],
+  browsers: ['last 2 versions'],
   cascade: false
 }
 
@@ -33,21 +40,26 @@ const babelOptions = {
 const htmlConfig = {collapseWhitespace: true}
 
 // Tasks
-gulp.task('img', () => {
+gulp.task('img', (cb) => {
   gulp.src('src/img/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('dist/img'))
+    .pipe(imagemin({ progressive: true }))
+    .pipe(gulp.dest('dist/img/')).on('end', cb).on('error', cb)
+})
+
+gulp.task('fonts', (cb) => {
+  gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('dist/fonts/')).on('end', cb).on('error', cb)
 })
 
 gulp.task('html', () => {
   gulp.src('src/*.html')
     .pipe(htmlmin(htmlConfig))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'))
 })
 
 gulp.task('styles', () => {
   gulp.src('src/scss/styles.scss')
-    .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(sass.sync(sassOptions).on('error', sass.logError))
     .pipe(sourcemaps.init())
     .pipe(sourcemaps.write())
     .pipe(autoprefixer(prefixerOptions))
@@ -80,6 +92,5 @@ gulp.task('serve', ['styles', 'scripts', 'html'], () => {
 
 gulp.task('default', ['serve'])
 
-
 // Task to production
-gulp.task('build', ['styles', 'scripts', 'img', 'html'])
+gulp.task('build', ['styles', 'scripts', 'img', 'fonts', 'html'])

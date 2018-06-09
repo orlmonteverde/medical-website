@@ -14,6 +14,7 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.24.4",
+    "eslint": "^4.19.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-babel": "^7.0.1",
@@ -25,5 +26,9 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "ed-grid": "^2.5.8",
+    "font-awesome": "^4.7.0",
+    "vue": "^2.5.16"
+  }
 }

@@ -1,4 +1,11 @@
-body {
-	background-color: green;
-	color: white;
-}
+// configuration files
+@import 'base/variables';
+
+// Layout
+
+// EDgrid
+@import 'layout/grid';
+
+// **THEME**
+// Font-Awesome
+@import 'theme/font-awesome';
