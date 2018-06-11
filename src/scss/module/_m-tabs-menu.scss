@@ -1,0 +1,47 @@
+.tabs-container {
+	position: retative;
+	width: 500px;
+	margin: 2em auto;
+}
+
+.tabs {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+
+	&__item {
+		border: 1px solid #ccc;
+		border-bottom: none;
+		line-height: 2.5;
+		padding: 0 1em;
+		margin-right: 1px;
+		background-color: #eee;
+		border-radius: 5px 5px 0 0;
+		position: relative;
+		top: 1px;
+		z-index: 0;
+		cursor: pointer;
+		
+		&.active {
+			background-color: #fff;
+			z-index: 20;
+		}
+	}
+}
+
+.panels {
+	position: relative;
+	border: 1px solid #ccc;
+	z-index: 10;
+
+	&__item {
+		position: absolute;
+		left: -5000px;
+
+		&.active {
+			position: relative;
+			left: 0;
+		}
+	}
+}
