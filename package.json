@@ -29,8 +29,10 @@
     "gulp-uglify": "^3.0.0"
   },
   "dependencies": {
-    "ed-grid": "^2.5.8",
+    "animate.scss": "^0.0.6",
     "font-awesome": "^4.7.0",
+    "normalize.scss": "^0.1.0",
+    "scrollreveal": "^3.4.0",
     "vue": "^2.5.16"
   }
 }

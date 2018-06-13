@@ -1,14 +1,20 @@
-// configuration files
+// BASE
+
+@import 'normalize';
+
 @import 'base/variables';
+@import 'base/functions';
+@import 'base/base';
 
-// Layout
+// LAYOUT
 
-// EDgrid
 @import 'layout/grid';
+@import 'layout/l-main-nav';
 
 // MODULE
+@import 'module/m-banner';
 @import 'module/m-tabs-menu';
 
-// **THEME**
+// THEME
 // Font-Awesome
 @import 'theme/font-awesome';

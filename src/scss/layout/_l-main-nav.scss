@@ -1,0 +1,57 @@
+.main-nav {
+  width: 100%;
+  height: 80px;
+
+  &__container {
+    max-width: $max-width;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      padding: $gutter / 2 0;
+
+      .logo, .navbar {
+        margin: auto;
+      }
+
+      .navbar {
+        justify-content: space-around;
+
+        &__item {
+          margin: auto $gutter;
+
+        }
+      }
+    }
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: $gutter;
+  flex-basis: 90%;
+
+  @media screen and (max-width: 594px) {
+    &__text {display: none;}
+
+    & .fa {
+      text-align: center;
+    }
+  }
+
+  &__item {
+    margin-left: $gutter;
+  }
+}
+
+.logo {
+  flex-basis: 10%;
+  margin-left: $gutter;
+}

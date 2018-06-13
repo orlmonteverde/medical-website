@@ -16,8 +16,9 @@ const sassOptions = {
   outputStyle: 'expanded',
   includePaths: [
     './src/scss/',
-    './node_modules/ed-grid/',
     './node_modules/font-awesome/scss/',
+    './node_modules/animate.scss/vendor/assets/stylesheets/',
+    './node_modules/normalize.scss/',
   ],
 };
 
@@ -70,7 +71,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('scripts', () => {
-  gulp.src(['node_modules/vue/dist/vue.js', 'src/js/**/*.js'])
+  gulp.src('src/js/**/*.js')
     .pipe(sourcemaps.init())
     .pipe(babel(babelOptions))
     .pipe(concat('app.js'))

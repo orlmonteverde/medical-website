@@ -1,0 +1,10 @@
+.main-banner {
+  padding: $gutter * 2 $gutter $gutter * 5;
+  $bgcolor: rgba(colors(dark), .2);
+  background: linear-gradient($bgcolor, $bgcolor), url("/img/medical-consultory.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
