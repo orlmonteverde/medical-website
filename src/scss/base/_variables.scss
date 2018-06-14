@@ -12,5 +12,14 @@ $colors: (
   dark: #153a5e
 );
 
+// Z-Index
+$z-normal: 1;
+$z-tools: 10;
+$z-widget: 100;
+$z-modal: 1000;
+
+
+// Config
+$menu-height: 80px;
 $gutter: 1rem;
 $max-width: 1024px;

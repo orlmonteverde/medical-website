@@ -1,7 +1,8 @@
 .tabs-container {
 	position: retative;
-	width: 500px;
+	width: 80%;
 	margin: 2em auto;
+	font-family: $font-text;
 }
 
 .tabs {
@@ -11,31 +12,35 @@
 	display: flex;
 
 	&__item {
-		border: 1px solid #ccc;
+		border: 1px solid colors(light);
 		border-bottom: none;
 		line-height: 2.5;
 		padding: 0 1em;
 		margin-right: 1px;
-		background-color: #eee;
+		background-color: colors(secundary);
 		border-radius: 5px 5px 0 0;
 		position: relative;
 		top: 1px;
-		z-index: 0;
+		z-index: $z-normal;
 		cursor: pointer;
 		
 		&.active {
-			background-color: #fff;
-			z-index: 20;
+			background-color:colors(bg);
+			z-index: $z-tools;
 		}
 	}
 }
 
 .panels {
 	position: relative;
-	border: 1px solid #ccc;
+	border: 1px solid colors(light);
+	background-color: colors(bg);
 	z-index: 10;
+	border-radius: 0 0 10px 10px;
+	@include box-shadow;
 
 	&__item {
+		display: flex;
 		position: absolute;
 		left: -5000px;
 

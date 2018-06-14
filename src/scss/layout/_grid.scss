@@ -1,8 +1,7 @@
-// EDgrid
-
-//$cssCore: true;
-//$cssHelpers: true;
-//$devMode: true;
-
-//@import "ed-grid";
-
+.main-banner,
+.main-nav__container,
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: $gutter;
+}

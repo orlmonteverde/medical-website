@@ -1,0 +1,12 @@
+.main-nav {
+  background-color: rgba(colors(primary), 1);
+  border-bottom: 1px solid colors(secundary);
+}
+
+.navbar {
+  color: colors(secundary);
+
+  &__link {
+    color: inherit;
+  }
+}

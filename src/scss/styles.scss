@@ -1,20 +1,20 @@
 // BASE
-
 @import 'normalize';
-
 @import 'base/variables';
 @import 'base/functions';
+@import 'base/mixins';
 @import 'base/base';
 
 // LAYOUT
-
 @import 'layout/grid';
 @import 'layout/l-main-nav';
+@import 'layout/l-main-banner';
 
 // MODULE
-@import 'module/m-banner';
 @import 'module/m-tabs-menu';
 
 // THEME
-// Font-Awesome
-@import 'theme/font-awesome';
+@import 'theme/theme';
+@import 'theme/t-main-nav';
+@import 'theme/t-main-banner';
+@import 'theme/t-aboutus';

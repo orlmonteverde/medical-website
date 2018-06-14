@@ -1,0 +1,11 @@
+body {
+  background-color: colors(bg);
+  font-family: $font-text;
+}
+
+.title {
+  font-family: $font-titles;
+  font-size: 3.5em;
+  color: colors(text);
+  text-align: center;
+}

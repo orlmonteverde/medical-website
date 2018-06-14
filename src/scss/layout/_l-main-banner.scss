@@ -1,0 +1,18 @@
+.main-banner {
+  margin-top: $menu-height;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__data {
+    width: 40%;
+    margin: 0;
+    padding: $gutter;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+}

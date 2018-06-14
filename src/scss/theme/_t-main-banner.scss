@@ -1,0 +1,22 @@
+.main-banner {
+  @include banner("/img/medical-consultory-01.jpg");
+
+  &__data {
+    color: colors(secundary);
+    background-color: rgba(colors(dark), .8);
+    border-radius: 10px;
+  }
+
+  &__title {
+    font-size: 3em;
+    font-family: $font-emphasis;
+  }
+
+  &__text {
+    font-size: 1.5em;
+  }
+
+  &__img {
+    width: 40%;
+  }
+}

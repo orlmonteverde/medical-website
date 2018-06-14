@@ -16,7 +16,6 @@ const sassOptions = {
   outputStyle: 'expanded',
   includePaths: [
     './src/scss/',
-    './node_modules/font-awesome/scss/',
     './node_modules/animate.scss/vendor/assets/stylesheets/',
     './node_modules/normalize.scss/',
   ],
@@ -46,11 +45,6 @@ gulp.task('img', (cb) => {
     .pipe(gulp.dest('dist/img/'))
     .on('end', cb)
     .on('error', cb);
-});
-
-gulp.task('fonts', (cb) => {
-  gulp.src('node_modules/font-awesome/fonts/*')
-    .pipe(gulp.dest('dist/fonts/')).on('end', cb).on('error', cb);
 });
 
 gulp.task('html', () => {
@@ -95,4 +89,4 @@ gulp.task('serve', ['styles', 'scripts', 'html'], () => {
 gulp.task('default', ['serve']);
 
 // Task to production
-gulp.task('build', ['styles', 'scripts', 'img', 'fonts', 'html']);
+gulp.task('build', ['styles', 'scripts', 'img', 'html']);
