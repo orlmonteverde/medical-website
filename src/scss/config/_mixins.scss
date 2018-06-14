@@ -1,12 +1,16 @@
-@mixin banner($url) {
+@mixin banner($url, $hero: false, $path: $container-path) {
   padding: $gutter * 2 $gutter $gutter * 5;
-  $bgcolor: rgba(colors(dark), .2);
+  
+ @if ($hero) {
+  background: linear-gradient(to right, rgba(colors(cta), .1), rgba(colors(cta), .9)), url($url);
+ } @else {
   background: url($url);
+}
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
+  clip-path: $path;
 }
 
 @mixin box-shadow {

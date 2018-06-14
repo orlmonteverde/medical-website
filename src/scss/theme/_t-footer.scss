@@ -1,0 +1,10 @@
+.main-footer {
+  background-color: colors(text);
+  padding: $gutter;
+  color: colors(light);
+
+  .title {
+    color: inherit;
+    margin-top: 0;
+  }
+}

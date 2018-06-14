@@ -1,5 +1,7 @@
 .main-banner {
-  @include banner("/img/medical-consultory-01.jpg");
+  $path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  $url: "/img/medical-consultory-02.jpg";
+  @include banner($url, true, $path);
 
   &__data {
     color: colors(secundary);

@@ -1,0 +1,8 @@
+.services {
+  @include banner("/img/medical-consultory-03.jpg");
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5em $gutter;
+}

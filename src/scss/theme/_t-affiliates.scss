@@ -1,0 +1,8 @@
+.affiliates {
+  @include banner("/img/medical-consultory-04.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5em $gutter;
+}

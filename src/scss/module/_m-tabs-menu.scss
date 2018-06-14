@@ -41,6 +41,8 @@
 
 	&__item {
 		display: flex;
+		align-items: center;
+		padding: $gutter;
 		position: absolute;
 		left: -5000px;
 
@@ -48,5 +50,16 @@
 			position: relative;
 			left: 0;
 		}
+	}
+}
+
+.aboutus {
+	&-img {
+		flex: 1 0 40%;
+	}
+
+	&-paragraph {
+		margin-left: $gutter;
+		font-size: 1.2em;
 	}
 }

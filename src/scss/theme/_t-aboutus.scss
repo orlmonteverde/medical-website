@@ -1,3 +1,4 @@
 .aboutus {
-  @include banner("/img/medical-consultory-02.jpg");
+  @include banner("/img/medical-consultory-01.jpg");
+  padding: $gutter;
 }

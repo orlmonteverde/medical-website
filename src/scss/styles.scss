@@ -1,8 +1,10 @@
+// CONFIG
+@import 'config/variables';
+@import 'config/functions';
+@import 'config/mixins';
+
 // BASE
 @import 'normalize';
-@import 'base/variables';
-@import 'base/functions';
-@import 'base/mixins';
 @import 'base/base';
 
 // LAYOUT
@@ -12,9 +14,15 @@
 
 // MODULE
 @import 'module/m-tabs-menu';
+@import 'module/button';
+@import 'module/m-services';
+@import 'module/m-affiliates';
 
 // THEME
 @import 'theme/theme';
 @import 'theme/t-main-nav';
 @import 'theme/t-main-banner';
 @import 'theme/t-aboutus';
+@import 'theme/t-services';
+@import 'theme/t-affiliates';
+@import 'theme/t-footer';
