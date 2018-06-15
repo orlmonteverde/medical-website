@@ -1,9 +1,9 @@
 {
-  "name": "sucre-salud",
+  "name": "medical-website",
   "version": "1.0.0",
-  "description": "web to sucre salud",
+  "description": "Generic medical website",
   "main": "gulpfile.js",
-  "repository": "https://github.com/orlmonteverde/sucre-salud.git",
+  "repository": "https://github.com/orlmonteverde/ss.git",
   "author": "Orlando Monteverde",
   "license": "MIT",
   "scripts": {

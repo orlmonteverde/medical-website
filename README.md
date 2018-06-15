@@ -1,6 +1,6 @@
-# Sucre Salud
+# Generic medical website
 
-Web responsive for Sucre Salud
+Web responsive of medical purpose with **ES6**, **Vue.js** and **Sass**.
 
 ## Build Setup
 
