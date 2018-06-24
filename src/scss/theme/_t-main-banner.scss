@@ -1,6 +1,6 @@
 .main-banner {
   $path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-  $url: "img/medical-consultory-02.jpg";
+  $url: "../img/medical-consultory-02.jpg";
   @include banner($url, true, $path);
   padding: $gutter * 2 $gutter $gutter * 5;
 

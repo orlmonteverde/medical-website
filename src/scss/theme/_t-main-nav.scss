@@ -9,4 +9,15 @@
   &__link {
     color: inherit;
   }
+
+  &__item {
+    padding: $gutter / 2;
+    transition: all .5s;
+
+    &:hover {
+      color: colors(primary);
+      background-color: rgba(colors(secundary), .8);
+      border-radius: 5px;
+    }
+  }
 }
