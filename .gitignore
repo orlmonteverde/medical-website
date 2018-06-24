@@ -99,6 +99,5 @@ GitHub.sublime-settings
 # End of https://www.gitignore.io/api/node,sass,sublimetext,visualstudiocode
 
 # Extra files
-mis/
 dist/
 *~

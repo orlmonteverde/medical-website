@@ -17,4 +17,4 @@ npm run build
 
 ## Preview
 
-![Desktop Preview](/doc/fullpage.png)
+![Desktop Preview](/wireframe/fullpage.png)

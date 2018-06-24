@@ -42,7 +42,7 @@ const htmlConfig = { collapseWhitespace: true };
 gulp.task('img', (cb) => {
   gulp.src('src/img/*')
     .pipe(imagemin({ progressive: true }))
-    .pipe(gulp.dest('dist/img/'))
+    .pipe(gulp.dest('docs/img/'))
     .on('end', cb)
     .on('error', cb);
 });
@@ -50,7 +50,7 @@ gulp.task('img', (cb) => {
 gulp.task('html', () => {
   gulp.src('src/*.html')
     .pipe(htmlmin(htmlConfig))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('docs'));
 });
 
 gulp.task('styles', () => {
@@ -60,7 +60,7 @@ gulp.task('styles', () => {
     .pipe(sourcemaps.write())
     .pipe(autoprefixer(prefixerOptions))
     .pipe(cssmin())
-    .pipe(gulp.dest('dist/css/'))
+    .pipe(gulp.dest('docs/css/'))
     .pipe(browserSync.stream({ match: '**/*.css' }));
 });
 
@@ -71,13 +71,13 @@ gulp.task('scripts', () => {
     .pipe(concat('app.js'))
     .pipe(uglify())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('docs/js'));
 });
 
 // Task to dev
 gulp.task('serve', ['styles', 'scripts', 'html'], () => {
   browserSync.init({
-    server: './dist',
+    server: './docs',
   });
 
   gulp.watch('src/js/*.js', ['scripts']).on('change', browserSync.reload);
