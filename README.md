@@ -15,6 +15,8 @@ npm run dev
 npm run build
 ```
 
-## Preview
+[Preview](https://orlmonteverde.github.io/medical-website/)
+
+## Wireframe
 
 ![Desktop Preview](/wireframe/fullpage.png)
