@@ -1,9 +1,11 @@
 @mixin banner($url, $hero: false, $path: $container-path) {
-  padding: 5em $gutter;
-  margin: 5em auto;
+  padding: 4rem $gutter;
+  margin: 3rem auto;
   
  @if ($hero) {
-  background: linear-gradient(to right, rgba(colors(cta), .1), rgba(colors(cta), .9)), url($url);
+  background: colors(cta);
+  background: linear-gradient(to right, colors(dark), colors(cta));
+
  } @else {
   background: url($url);
 }
@@ -16,12 +18,16 @@
 
 @mixin box-shadow {
   box-shadow: 0 10px 10px -5px rgba(colors(text), .8),
-              0 20px 10px -10px rgba(colors(text), .4),
+              0 20px 10px -10px rgba(colors(text), .4)
+}
+
+@mixin is-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 
 @mixin components {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include is-center;
   flex-wrap: wrap;
 }

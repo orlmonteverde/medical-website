@@ -1,6 +1,6 @@
 .tabs-container {
 	position: retative;
-	width: 80%;
+	width: 90%;
 	margin: 2em auto;
 	font-family: $font-text;
 }
@@ -12,12 +12,12 @@
 	display: flex;
 
 	&__item {
-		border: 1px solid colors(light);
+		border: 1px solid colors(bg);
 		border-bottom: none;
 		line-height: 2.5;
 		padding: 0 1em;
 		margin-right: 1px;
-		background-color: colors(secundary);
+		background-color: colors(light);
 		border-radius: 5px 5px 0 0;
 		position: relative;
 		top: 1px;
@@ -45,6 +45,10 @@
 		padding: $gutter;
 		position: absolute;
 		left: -5000px;
+
+		@media screen and (max-width: 620px)  {
+			flex-direction: column;
+		}
 
 		&.active {
 			position: relative;

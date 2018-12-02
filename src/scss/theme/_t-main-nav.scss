@@ -1,22 +1,23 @@
 .main-nav {
-  background-color: rgba(colors(primary), 1);
-  border-bottom: 1px solid colors(secundary);
+  background: colors(primary);
+  background: linear-gradient(to right, colors(secundary), colors(primary));
+  border-bottom: 1px solid colors(light);
 }
 
 .navbar {
-  color: colors(secundary);
+  color: colors(light);
 
   &__link {
     color: inherit;
   }
 
   &__item {
-    padding: $gutter / 2;
+    padding: .2rem $gutter / 2;
     transition: all .5s;
 
     &:hover {
       color: colors(primary);
-      background-color: rgba(colors(secundary), .8);
+      background-color: rgba(colors(light), .8);
       border-radius: 5px;
     }
   }

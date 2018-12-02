@@ -5,3 +5,8 @@
   margin: 0 auto;
   padding: $gutter;
 }
+
+.services,
+.affiliates {
+    padding: 2.5 * $gutter $gutter;
+}

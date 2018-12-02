@@ -1,8 +1,26 @@
-.constact-us {
+.contact-us {
   display: flex;
   justify-content: space-around;
 
+  @media screen and (max-width: 420px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__left, &__right {
     flex: 1 1 40%;
+    @include is-center;
+    flex-direction: column;
+    text-align: center;
+
+    svg {
+      margin-right: .2rem;
+    }
+  }
+
+  &__right {
+    @media screen and (max-width: 420px) {
+      margin-top: $gutter;
+    }
   }
 }

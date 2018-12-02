@@ -3,13 +3,13 @@ $font-text: 'Open Sans', sans-serif;
 $font-emphasis: 'Courgette', cursive;
 
 $colors: (
-  primary: #c12626,
-  secundary: #dddddd,
+  primary: #e53935,
+  secundary: #e35d5b,
   light: #f4f2e8,
   bg: #fff,
-  cta: #d69960,
+  cta: #24C6DC,
   text: #333,
-  dark: #153a5e
+  dark: #514A9D
 );
 
 // Z-Index
@@ -20,7 +20,6 @@ $z-modal: 1000;
 
 
 // Config
-$menu-height: 100px;
 $gutter: 1rem;
 $max-width: 1024px;
-$container-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+$container-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);

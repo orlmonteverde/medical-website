@@ -4,7 +4,6 @@ const cssmin = require('gulp-cssnano');
 const htmlmin = require('gulp-htmlmin');
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
-const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
@@ -41,7 +40,6 @@ const htmlConfig = { collapseWhitespace: true };
 // Tasks
 gulp.task('img', (cb) => {
   gulp.src('src/img/*')
-    .pipe(imagemin({ progressive: true }))
     .pipe(gulp.dest('docs/img/'))
     .on('end', cb)
     .on('error', cb);
